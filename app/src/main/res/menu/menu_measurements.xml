@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.franktastic4.mylifts.MeasurementPackage.MeasurementsActivity">
+
+    <!--
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    -->
+
+    <item
+        android:id="@+id/action_example"
+        android:title="@string/add_workout_string"
+        app:showAsAction="withText|ifRoom" />
+
+    <item
+        android:id="@+id/undo"
+        android:title="@string/undo_string"
+        android:orderInCategory="50"
+        app:showAsAction="withText|ifRoom" />
+
+    <item
+        android:id="@+id/undo_tapped"
+        android:title="@string/undo_tapped_string"
+        android:orderInCategory="50"
+        app:showAsAction="withText|ifRoom" />
+
+</menu>

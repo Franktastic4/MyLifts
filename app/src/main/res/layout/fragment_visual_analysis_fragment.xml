@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:id="@+id/VSAScrollView">
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <com.example.franktastic4.mylifts.AutoResizeTextView
+        android:id="@+id/TextViewPerformanceChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="50sp"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/WeightLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <com.example.franktastic4.mylifts.AutoResizeTextView
+        android:id="@+id/TextViewRateOfGrowthLineChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="50sp"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/RateOfGrowthLineChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <com.example.franktastic4.mylifts.AutoResizeTextView
+        android:id="@+id/TextViewRepsAndWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="50sp"/>
+
+    <com.github.mikephil.charting.charts.CombinedChart
+        android:id="@+id/RepsAndWeightChart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </com.github.mikephil.charting.charts.CombinedChart>
+
+
+</LinearLayout>
+
+</ScrollView>

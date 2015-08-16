@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="false"
+    android:id="@+id/JournalScrollView">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/JournalNav">
+
+        <Button
+            android:id="@+id/leftJournalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_left_xxhdpi"
+            android:layout_toStartOf="@+id/journalTextView"
+            android:layout_toLeftOf="@+id/journalTextView"
+            android:layout_weight="1"/>
+
+        <com.example.franktastic4.mylifts.AutoResizeTextView
+            android:id="@+id/journalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:ellipsize="none"
+            android:maxLines="1"
+            android:gravity="center"
+            android:text="Navigate Journal"
+
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true" /> <!-- maximum size -->
+
+
+        <Button
+            android:id="@+id/rightJournalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_right_xxhdpi"
+            android:layout_toEndOf="@+id/journalTextView"
+            android:layout_toRightOf="@+id/journalTextView"
+            android:layout_weight="1" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/DateTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/JournalNav"
+        android:ellipsize="none"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textSize="15sp"
+        />
+
+        <TextView
+            android:id="@+id/JournalEntryTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DateTextView"
+            android:ellipsize="none"
+            android:maxLines="1"
+            android:gravity="center"
+            android:textSize="15sp"
+            />
+
+        <com.example.franktastic4.mylifts.AutoResizeTextView
+            android:id="@+id/WorkoutEntryTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/JournalEntryTextView"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/MeasurementEntryTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WorkoutEntryTextView"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:textSize="15sp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

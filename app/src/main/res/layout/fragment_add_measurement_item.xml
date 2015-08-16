@@ -1,0 +1,49 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="12dp"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        tools:context="com.example.franktastic4.mylifts.MeasurementPackage.AddMeasurement"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/add_measurement_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/add_measurement_message"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/add_measurement_button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/add_measurement_message_done"
+            android:layout_weight="0"
+            android:onClick="addMeasurementDone"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/addMeasurementTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_gravity="center_vertical" />
+
+
+</LinearLayout>

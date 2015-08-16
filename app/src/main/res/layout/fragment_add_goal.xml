@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_add_goal_container">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Journal Entry"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:id="@+id/addGoalJournalDone" />
+
+    <EditText
+        android:id="@+id/addGoalJournalEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/AddGoalJournlMsg"
+        android:layout_below="@+id/AddGoalTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="141dp"
+        android:layout_above="@+id/addGoalJournalDone" />
+
+    <TextView
+        android:id="@+id/AddGoalTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Set how much you want to gain or lose, your current measurement, and the timeframe you want it done in. Timeframe is optional."
+        android:layout_below="@+id/add_goal_button"/>
+
+    <Button
+        android:id="@+id/add_goal_button"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/add_workout_message_done"
+        android:layout_below="@+id/add_goal_date_edit_text"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/add_goal_date_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_goal_date_message"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/currentMeasurementEditText"/>
+
+    <EditText
+        android:id="@+id/currentMeasurementEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your current measurement"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/add_goal_edit_text"/>
+
+    <EditText
+        android:id="@+id/add_goal_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_goal_message"
+        android:layout_alignParentLeft="true"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.franktastic4.mylifts" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label" >
+        <activity
+            android:name=".WorkoutListPackage.WorkoutList"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity android:label="@string/app_name" android:name="AddWorkout"/> -->
+
+        <activity
+            android:name=".MeasurementPackage.MeasurementsActivity"
+            android:label="@string/title_activity_measurements" >
+        </activity>
+
+        <activity
+            android:name=".JournalPackage.JournalActivity"
+            android:label="@string/title_activity_journal" >
+        </activity>
+
+        <activity
+            android:name=".CalendarPackage.CalendarActivity"
+            android:label="@string/title_activity_calendar" >
+        </activity>
+
+        <activity
+            android:name=".AnalysisPackage.AnalysisActivity"
+            android:label="@string/title_activity_analysis" >
+        </activity>
+
+        <activity
+            android:name=".SettingsPackage.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+
+
+
+
+    </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+
+</manifest>

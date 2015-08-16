@@ -1,0 +1,33 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<!--
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="10"
+        app:showAsAction="never" />
+-->
+
+
+    <item
+        android:id="@+id/action_example"
+        android:title="@string/add_workout_string"
+        app:showAsAction="withText|ifRoom" />
+
+    <item
+        android:id="@+id/undo"
+        android:title="@string/undo_string"
+        android:orderInCategory="50"
+        app:showAsAction="withText|ifRoom" />
+
+    <item
+        android:visibility="gone"
+        android:id="@+id/undo_tapped"
+        android:title="@string/undo_tapped_string"
+        android:orderInCategory="50"
+        app:showAsAction="withText|ifRoom"
+        />
+
+</menu>

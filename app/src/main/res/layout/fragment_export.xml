@@ -1,0 +1,18 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="204dp"
+    tools:context="com.example.franktastic4.mylifts.SettingsPackage.FragmentExport"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:orientation="horizontal" >
+
+    <ListView
+        android:id="@+id/exportListView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>
